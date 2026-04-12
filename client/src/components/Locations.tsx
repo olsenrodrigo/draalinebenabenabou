@@ -26,8 +26,8 @@ export default function Locations() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="inline-block px-4 py-2 rounded-full mb-6" style={{ backgroundColor: "rgba(91, 140, 155, 0.15)" }}>
-            <span className="text-sm font-medium" style={{ color: "#2C3E50" }}>Consultório</span>
+          <div className="inline-block px-4 py-2 rounded-full mb-6" style={{ backgroundColor: "rgba(139, 105, 73, 0.15)" }}>
+            <span className="text-sm font-medium" style={{ color: "#3B2918" }}>Consultório</span>
           </div>
 
           <h3 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "#212529" }}>
@@ -55,10 +55,10 @@ export default function Locations() {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                   className="flex items-start gap-4 bg-white rounded-xl p-5 shadow-sm border"
-                  style={{ borderColor: "rgba(91, 140, 155, 0.15)" }}
+                  style={{ borderColor: "rgba(139, 105, 73, 0.15)" }}
                 >
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#EDF2F4" }}>
-                    <feature.icon className="w-5 h-5" style={{ color: "#5B8C9B" }} />
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#F5EDE3" }}>
+                    <feature.icon className="w-5 h-5" style={{ color: "#8B6949" }} />
                   </div>
                   <span className="font-medium pt-2" style={{ color: "#212529" }}>{feature.text}</span>
                 </motion.div>
@@ -70,10 +70,10 @@ export default function Locations() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="mt-8 p-6 rounded-2xl border"
-              style={{ borderColor: "rgba(91, 140, 155, 0.2)", backgroundColor: "rgba(237, 242, 244, 0.5)" }}
+              style={{ borderColor: "rgba(139, 105, 73, 0.2)", backgroundColor: "rgba(245, 237, 227, 0.5)" }}
             >
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: "#5B8C9B" }} />
+                <MapPin className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: "#8B6949" }} />
                 <div>
                   <p className="font-bold mb-1" style={{ color: "#212529" }}>Instituto Emunah — Jardim das Perdizes</p>
                   <p style={{ color: "#3C3C3C" }}>
@@ -82,10 +82,10 @@ export default function Locations() {
                     São Paulo/SP — CEP 05036-040
                   </p>
                   <div className="mt-3 space-y-1">
-                    <p className="text-sm font-medium" style={{ color: "#5B8C9B" }}>
+                    <p className="text-sm font-medium" style={{ color: "#8B6949" }}>
                       Telefone: (11) 3615-2474
                     </p>
-                    <p className="text-sm font-medium" style={{ color: "#5B8C9B" }}>
+                    <p className="text-sm font-medium" style={{ color: "#8B6949" }}>
                       WhatsApp: (11) 93800-9174
                     </p>
                   </div>
@@ -102,7 +102,7 @@ export default function Locations() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="rounded-2xl overflow-hidden shadow-lg border"
-            style={{ borderColor: "rgba(91, 140, 155, 0.15)", height: "450px" }}
+            style={{ borderColor: "rgba(139, 105, 73, 0.15)", height: "450px" }}
           >
             <iframe
               src="https://maps.google.com/maps?f=q&hl=pt-BR&q=Av.+Marqu%C3%AAs+de+S%C3%A3o+Vicente,+2219,+Jardim+das+Perdizes,+S%C3%A3o+Paulo,+SP&z=16&ie=UTF8&output=embed"

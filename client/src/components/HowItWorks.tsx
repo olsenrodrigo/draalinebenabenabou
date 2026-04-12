@@ -38,8 +38,8 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="inline-block px-4 py-2 rounded-full mb-6" style={{ backgroundColor: "#EDF2F4" }}>
-            <span className="text-sm font-medium" style={{ color: "#5B8C9B" }}>Conteúdo Educativo</span>
+          <div className="inline-block px-4 py-2 rounded-full mb-6" style={{ backgroundColor: "#F5EDE3" }}>
+            <span className="text-sm font-medium" style={{ color: "#8B6949" }}>Conteúdo Educativo</span>
           </div>
 
           <h3 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "#212529" }}>
@@ -61,10 +61,10 @@ export default function HowItWorks() {
               transition={{ delay: index * 0.08 }}
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
               className="bg-white rounded-2xl p-6 shadow-lg border hover:shadow-xl transition-all"
-              style={{ borderColor: "rgba(91, 140, 155, 0.15)" }}
+              style={{ borderColor: "rgba(139, 105, 73, 0.15)" }}
             >
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#EDF2F4" }}>
-                <BookOpen className="w-5 h-5" style={{ color: "#5B8C9B" }} />
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#F5EDE3" }}>
+                <BookOpen className="w-5 h-5" style={{ color: "#8B6949" }} />
               </div>
               <h4 className="text-lg font-bold mb-3" style={{ color: "#212529" }}>{topic.title}</h4>
               <p className="text-sm leading-relaxed" style={{ color: "#3C3C3C" }}>{topic.description}</p>

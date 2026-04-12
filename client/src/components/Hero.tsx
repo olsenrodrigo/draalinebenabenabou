@@ -20,12 +20,12 @@ export default function Hero({ scrollToSection }: HeroProps) {
         <div
           className="w-full h-full"
           style={{
-            background: "linear-gradient(135deg, #1a2e3b 0%, #2C3E50 40%, #3d6b7a 100%)"
+            background: "linear-gradient(135deg, #281e15 0%, #3B2918 40%, #8B6949 100%)"
           }}
         />
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(to right, rgba(26, 46, 59, 0.97), rgba(44, 62, 80, 0.75), rgba(44, 62, 80, 0.25))" }}
+          style={{ background: "linear-gradient(to right, rgba(40, 30, 21, 0.97), rgba(59, 41, 24, 0.75), rgba(59, 41, 24, 0.25))" }}
         />
       </div>
 
@@ -38,25 +38,25 @@ export default function Hero({ scrollToSection }: HeroProps) {
           >
             <div
               className="inline-block px-4 py-2 backdrop-blur-sm border rounded-full mb-6"
-              style={{ backgroundColor: "rgba(91, 140, 155, 0.2)", borderColor: "rgba(91, 140, 155, 0.3)" }}
+              style={{ backgroundColor: "rgba(139, 105, 73, 0.2)", borderColor: "rgba(139, 105, 73, 0.3)" }}
             >
-              <span className="text-sm font-medium" style={{ color: "#EDF2F4" }}>
+              <span className="text-sm font-medium" style={{ color: "#F5EDE3" }}>
                 Cirurgia Vascular e Endovascular · Angiorradiologia
               </span>
             </div>
 
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Suas veias merecem{" "}
-              <span style={{ color: "#5B8C9B" }}>
+              <span style={{ color: "#8B6949" }}>
                 cuidado especializado
               </span>
             </h2>
 
-            <p className="text-lg mb-4 leading-relaxed" style={{ color: "#EDF2F4" }}>
+            <p className="text-lg mb-4 leading-relaxed" style={{ color: "#F5EDE3" }}>
               Dra. Aline de Paula C. Benabou — Cirurgiã Vascular, Endovascular e Angiorradiologista
             </p>
 
-            <p className="text-base mb-8 leading-relaxed" style={{ color: "rgba(237, 242, 244, 0.85)" }}>
+            <p className="text-base mb-8 leading-relaxed" style={{ color: "rgba(245, 237, 227, 0.85)" }}>
               Formada pela FMUSP com residência no Hospital das Clínicas, a Dra. Aline combina
               precisão técnica e abordagens minimamente invasivas para tratar varizes, aneurismas,
               tromboses e doenças vasculares — com segurança e cuidado individualizado.
@@ -68,7 +68,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
                 whileTap={{ scale: 0.95 }}
                 onClick={() => goTo("contact")}
                 className="group px-8 py-4 text-white rounded-full font-medium flex items-center justify-center gap-2 hover:shadow-xl transition-all cursor-pointer"
-                style={{ background: "#5B8C9B" }}
+                style={{ background: "#8B6949" }}
               >
                 <Calendar size={20} />
                 Agendar Consulta
@@ -102,7 +102,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-white mb-1">{stat.value}</div>
-                <div className="text-sm" style={{ color: "#EDF2F4" }}>{stat.label}</div>
+                <div className="text-sm" style={{ color: "#F5EDE3" }}>{stat.label}</div>
               </div>
             ))}
           </motion.div>
