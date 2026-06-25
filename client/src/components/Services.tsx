@@ -18,7 +18,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24" style={{ backgroundColor: "#F5EDE3" }}>
+    <section id="services" className="py-24" style={{ backgroundColor: "#E8F5F7" }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -26,8 +26,8 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="inline-block px-4 py-2 rounded-full mb-6" style={{ backgroundColor: "rgba(139, 105, 73, 0.15)" }}>
-            <span className="text-sm font-medium" style={{ color: "#3B2918" }}>Especialidades</span>
+          <div className="inline-block px-4 py-2 rounded-full mb-6" style={{ backgroundColor: "rgba(30, 123, 140, 0.15)" }}>
+            <span className="text-sm font-medium" style={{ color: "#0D4A5A" }}>Especialidades</span>
           </div>
 
           <h3 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "#212529" }}>
@@ -49,9 +49,9 @@ export default function Services() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
               className="flex items-center gap-3 bg-white rounded-xl p-4 shadow-sm border"
-              style={{ borderColor: "rgba(139, 105, 73, 0.15)" }}
+              style={{ borderColor: "rgba(30, 123, 140, 0.15)" }}
             >
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: "#8B6949" }} />
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: "#1E7B8C" }} />
               <span className="font-medium" style={{ color: "#212529" }}>{service}</span>
             </motion.div>
           ))}
@@ -62,18 +62,18 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="rounded-3xl p-12 text-center text-white"
-          style={{ background: "linear-gradient(135deg, #8B6949 0%, #3B2918 100%)" }}
+          style={{ background: "linear-gradient(135deg, #1E7B8C 0%, #0D4A5A 100%)" }}
         >
           <h4 className="text-3xl font-bold mb-4 text-white">
             Sintomas vasculares nunca devem ser ignorados
           </h4>
-          <p className="text-xl mb-8 max-w-2xl mx-auto" style={{ color: "#F5EDE3" }}>
+          <p className="text-xl mb-8 max-w-2xl mx-auto" style={{ color: "#E8F5F7" }}>
             Dores nas pernas, inchaço, varizes ou formigamento podem ser sinais de doenças vasculares
             tratáveis. O diagnóstico precoce muda completamente o prognóstico.
           </p>
           <button
             className="px-8 py-4 bg-white rounded-full font-semibold hover:bg-opacity-90 transition-colors cursor-pointer"
-            style={{ color: "#3B2918" }}
+            style={{ color: "#0D4A5A" }}
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
           >
             Agendar Consulta

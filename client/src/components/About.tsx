@@ -13,7 +13,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="pb-24 pt-32 sm:pt-36 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -22,16 +22,12 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-block px-4 py-2 rounded-full mb-6" style={{ backgroundColor: "#F5EDE3" }}>
-              <span className="text-sm font-medium" style={{ color: "#8B6949" }}>Sobre a Especialista</span>
-            </div>
-
             <h3 className="text-4xl md:text-5xl font-bold mb-2" style={{ color: "#212529" }}>
               Dra. Aline de Paula C. Benabou
             </h3>
 
-            <p className="text-lg mb-6 font-medium" style={{ color: "#8B6949" }}>
-              Precisão técnica com atenção humana e personalizada
+            <p className="text-lg mb-6 font-medium" style={{ color: "#1E7B8C" }}>
+              Suas veias merecem cuidado especializado
             </p>
 
             <p className="text-lg mb-4 leading-relaxed" style={{ color: "#3C3C3C" }}>
@@ -64,10 +60,10 @@ export default function About() {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.06 }}
                   className="flex items-center gap-3 rounded-xl p-3 border"
-                  style={{ borderColor: "rgba(139, 105, 73, 0.15)", backgroundColor: "rgba(245, 237, 227, 0.4)" }}
+                  style={{ borderColor: "rgba(30, 123, 140, 0.15)", backgroundColor: "rgba(232, 245, 247, 0.4)" }}
                 >
-                  <div className="flex-shrink-0 w-9 h-9 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#F5EDE3" }}>
-                    <item.icon className="w-4 h-4" style={{ color: "#8B6949" }} />
+                  <div className="flex-shrink-0 w-9 h-9 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#E8F5F7" }}>
+                    <item.icon className="w-4 h-4" style={{ color: "#1E7B8C" }} />
                   </div>
                   <span className="text-sm font-medium" style={{ color: "#212529" }}>{item.text}</span>
                 </motion.div>
@@ -89,8 +85,8 @@ export default function About() {
                 className="w-full h-[550px] object-cover object-top"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-56 h-56 rounded-3xl -z-10" style={{ backgroundColor: "rgba(139, 105, 73, 0.1)" }} />
-            <div className="absolute -top-6 -left-6 w-40 h-40 rounded-full -z-10" style={{ backgroundColor: "rgba(139, 105, 73, 0.1)" }} />
+            <div className="absolute -bottom-6 -right-6 w-56 h-56 rounded-3xl -z-10" style={{ backgroundColor: "rgba(30, 123, 140, 0.1)" }} />
+            <div className="absolute -top-6 -left-6 w-40 h-40 rounded-full -z-10" style={{ backgroundColor: "rgba(30, 123, 140, 0.1)" }} />
           </motion.div>
         </div>
 
@@ -99,7 +95,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 pt-16 border-t"
-          style={{ borderColor: "rgba(139, 105, 73, 0.2)" }}
+          style={{ borderColor: "rgba(30, 123, 140, 0.2)" }}
         >
           {[
             { value: "10+ anos", label: "de experiência em cirurgia vascular e endovascular" },
@@ -107,7 +103,7 @@ export default function About() {
             { value: "HC-FMUSP", label: "Residência na maior referência cirúrgica do país" },
           ].map((item, index) => (
             <div key={index} className="text-center">
-              <div className="text-2xl md:text-3xl font-bold mb-2" style={{ color: "#3B2918" }}>{item.value}</div>
+              <div className="text-2xl md:text-3xl font-bold mb-2" style={{ color: "#0D4A5A" }}>{item.value}</div>
               <div className="text-base" style={{ color: "#3C3C3C" }}>{item.label}</div>
             </div>
           ))}
@@ -119,7 +115,7 @@ export default function About() {
           viewport={{ once: true }}
           className="mt-20 text-center"
         >
-          <blockquote className="text-3xl md:text-4xl font-bold italic max-w-3xl mx-auto mb-8" style={{ color: "#3B2918" }}>
+          <blockquote className="text-3xl md:text-4xl font-bold italic max-w-3xl mx-auto mb-8" style={{ color: "#0D4A5A" }}>
             "Tratar a doença vascular é cuidar da circulação que sustenta cada órgão do seu corpo."
           </blockquote>
           <motion.button
@@ -127,7 +123,7 @@ export default function About() {
             whileTap={{ scale: 0.95 }}
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             className="px-8 py-4 text-white rounded-full font-medium hover:shadow-xl transition-all cursor-pointer"
-            style={{ background: "#8B6949" }}
+            style={{ background: "#1E7B8C" }}
           >
             Agendar minha consulta
           </motion.button>

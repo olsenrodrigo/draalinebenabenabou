@@ -7,7 +7,7 @@ interface NavbarProps {
   scrollToSection?: (section: string) => void;
 }
 
-export default function Navbar({ activeSection = "hero", scrollToSection }: NavbarProps) {
+export default function Navbar({ activeSection = "about", scrollToSection }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -20,8 +20,7 @@ export default function Navbar({ activeSection = "hero", scrollToSection }: Navb
   }, []);
 
   const menuItems = [
-    { id: "hero", label: "Início" },
-    { id: "about", label: "Sobre" },
+    { id: "about", label: "Início" },
     { id: "services", label: "Especialidades" },
     { id: "treatments", label: "Tratamentos" },
     { id: "differentials", label: "Diferenciais" },
@@ -54,10 +53,10 @@ export default function Navbar({ activeSection = "hero", scrollToSection }: Navb
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
             className="flex items-center cursor-pointer"
-            onClick={() => handleNav("hero")}
+            onClick={() => handleNav("about")}
           >
-            <span className="text-xl font-bold" style={{ color: "#3B2918" }}>
-              Dra.<span style={{ color: "#8B6949" }}> Aline Benabou</span>
+            <span className="text-xl font-bold" style={{ color: "#0D4A5A" }}>
+              Dra.<span style={{ color: "#1E7B8C" }}> Aline Benabou</span>
             </span>
           </motion.div>
 
@@ -70,14 +69,14 @@ export default function Navbar({ activeSection = "hero", scrollToSection }: Navb
                 transition={{ delay: 0.1 * index }}
                 onClick={() => handleNav(item.id)}
                 className="relative text-sm font-medium transition-colors cursor-pointer hover:opacity-80"
-                style={{ color: activeSection === item.id ? "#8B6949" : "#494949" }}
+                style={{ color: activeSection === item.id ? "#1E7B8C" : "#494949" }}
               >
                 {item.label}
                 {activeSection === item.id && (
                   <motion.div
                     layoutId="activeSection"
                     className="absolute -bottom-1 left-0 right-0 h-0.5"
-                    style={{ background: "#8B6949" }}
+                    style={{ background: "#1E7B8C" }}
                   />
                 )}
               </motion.button>
@@ -116,7 +115,7 @@ export default function Navbar({ activeSection = "hero", scrollToSection }: Navb
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             className="lg:hidden py-4 border-t"
-            style={{ borderColor: "rgba(139, 105, 73, 0.2)" }}
+            style={{ borderColor: "rgba(30, 123, 140, 0.2)" }}
           >
             {menuItems.map((item) => (
               <button
@@ -124,8 +123,8 @@ export default function Navbar({ activeSection = "hero", scrollToSection }: Navb
                 onClick={() => handleNav(item.id)}
                 className="block w-full text-left px-4 py-3 text-sm font-medium transition-colors hover:opacity-90 cursor-pointer"
                 style={{
-                  color: activeSection === item.id ? "#8B6949" : "#494949",
-                  backgroundColor: activeSection === item.id ? "#F5EDE3" : "transparent"
+                  color: activeSection === item.id ? "#1E7B8C" : "#494949",
+                  backgroundColor: activeSection === item.id ? "#E8F5F7" : "transparent"
                 }}
               >
                 {item.label}

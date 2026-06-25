@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Treatments from "@/components/Treatments";
@@ -12,7 +11,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState("hero");
+  const [activeSection, setActiveSection] = useState("about");
 
   const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId);
@@ -23,7 +22,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    const sections = ["hero", "about", "services", "treatments", "differentials", "locations", "faq", "how-it-works", "contact"];
+    const sections = ["about", "services", "treatments", "differentials", "locations", "faq", "how-it-works", "contact"];
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -47,7 +46,6 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Navbar activeSection={activeSection} scrollToSection={scrollToSection} />
       <main>
-        <Hero scrollToSection={scrollToSection} />
         <About />
         <Services />
         <Treatments />

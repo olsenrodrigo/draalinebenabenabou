@@ -34,8 +34,8 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <div className="inline-block px-4 py-2 rounded-full mb-6" style={{ backgroundColor: "rgba(139, 105, 73, 0.15)" }}>
-            <span className="text-sm font-medium" style={{ color: "#3B2918" }}>Entre em Contato</span>
+          <div className="inline-block px-4 py-2 rounded-full mb-6" style={{ backgroundColor: "rgba(30, 123, 140, 0.15)" }}>
+            <span className="text-sm font-medium" style={{ color: "#0D4A5A" }}>Entre em Contato</span>
           </div>
 
           <h3 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "#212529" }}>
@@ -55,10 +55,10 @@ export default function Contact() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <div className="bg-white rounded-2xl p-6 shadow-sm border" style={{ borderColor: "rgba(139, 105, 73, 0.15)" }}>
+            <div className="bg-white rounded-2xl p-6 shadow-sm border" style={{ borderColor: "rgba(30, 123, 140, 0.15)" }}>
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#F5EDE3" }}>
-                  <MapPin className="w-5 h-5" style={{ color: "#8B6949" }} />
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#E8F5F7" }}>
+                  <MapPin className="w-5 h-5" style={{ color: "#1E7B8C" }} />
                 </div>
                 <div>
                   <p className="font-bold mb-1" style={{ color: "#212529" }}>Endereço</p>
@@ -71,10 +71,10 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-sm border" style={{ borderColor: "rgba(139, 105, 73, 0.15)" }}>
+            <div className="bg-white rounded-2xl p-6 shadow-sm border" style={{ borderColor: "rgba(30, 123, 140, 0.15)" }}>
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#F5EDE3" }}>
-                  <Phone className="w-5 h-5" style={{ color: "#8B6949" }} />
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#E8F5F7" }}>
+                  <Phone className="w-5 h-5" style={{ color: "#1E7B8C" }} />
                 </div>
                 <div>
                   <p className="font-bold mb-1" style={{ color: "#212529" }}>Contato</p>
@@ -95,10 +95,10 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-sm border" style={{ borderColor: "rgba(139, 105, 73, 0.15)" }}>
+            <div className="bg-white rounded-2xl p-6 shadow-sm border" style={{ borderColor: "rgba(30, 123, 140, 0.15)" }}>
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#F5EDE3" }}>
-                  <Mail className="w-5 h-5" style={{ color: "#8B6949" }} />
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#E8F5F7" }}>
+                  <Mail className="w-5 h-5" style={{ color: "#1E7B8C" }} />
                 </div>
                 <div>
                   <p className="font-bold mb-1" style={{ color: "#212529" }}>E-mail</p>
@@ -120,12 +120,12 @@ export default function Contact() {
               {status === "success" ? (
                 <div className="flex flex-col items-center justify-center py-12 text-center">
                   <CheckCircle2 className="w-16 h-16 text-green-500 mb-4" />
-                  <h4 className="text-xl font-bold mb-2" style={{ color: "#3B2918" }}>Mensagem Enviada!</h4>
+                  <h4 className="text-xl font-bold mb-2" style={{ color: "#0D4A5A" }}>Mensagem Enviada!</h4>
                   <p className="mb-6" style={{ color: "#3C3C3C" }}>Entraremos em contato em breve para confirmar seu agendamento.</p>
                   <button
                     onClick={() => setStatus("idle")}
                     className="px-6 py-2 rounded-lg border font-medium transition-colors hover:bg-gray-50 cursor-pointer"
-                    style={{ borderColor: "rgba(139, 105, 73, 0.3)", color: "#3B2918" }}
+                    style={{ borderColor: "rgba(30, 123, 140, 0.3)", color: "#0D4A5A" }}
                   >
                     Enviar outra mensagem
                   </button>
@@ -141,7 +141,7 @@ export default function Contact() {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:border-transparent transition-all outline-none"
-                        style={{ borderColor: "rgba(139, 105, 73, 0.3)" }}
+                        style={{ borderColor: "rgba(30, 123, 140, 0.3)" }}
                         placeholder="Seu nome"
                       />
                     </div>
@@ -153,7 +153,7 @@ export default function Contact() {
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:border-transparent transition-all outline-none"
-                        style={{ borderColor: "rgba(139, 105, 73, 0.3)" }}
+                        style={{ borderColor: "rgba(30, 123, 140, 0.3)" }}
                         placeholder="(11) 99999-9999"
                       />
                     </div>
@@ -167,7 +167,7 @@ export default function Contact() {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:border-transparent transition-all outline-none"
-                      style={{ borderColor: "rgba(139, 105, 73, 0.3)" }}
+                      style={{ borderColor: "rgba(30, 123, 140, 0.3)" }}
                       placeholder="seu@email.com"
                     />
                   </div>
@@ -180,7 +180,7 @@ export default function Contact() {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:border-transparent transition-all resize-none outline-none"
-                      style={{ borderColor: "rgba(139, 105, 73, 0.3)" }}
+                      style={{ borderColor: "rgba(30, 123, 140, 0.3)" }}
                       placeholder="Descreva seus sintomas ou o motivo da consulta..."
                     />
                   </div>
@@ -195,7 +195,7 @@ export default function Contact() {
                     type="submit"
                     disabled={status === "loading"}
                     className="w-full px-8 py-4 text-white rounded-xl font-semibold flex items-center justify-center gap-2 hover:shadow-xl transition-all cursor-pointer disabled:opacity-70"
-                    style={{ background: "linear-gradient(135deg, #8B6949 0%, #3B2918 100%)" }}
+                    style={{ background: "linear-gradient(135deg, #1E7B8C 0%, #0D4A5A 100%)" }}
                   >
                     {status === "loading" ? (
                       <><Loader2 className="w-5 h-5 animate-spin" /> Enviando...</>
