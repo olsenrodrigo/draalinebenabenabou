@@ -4,18 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
-    <!-- WHITELABEL: Substituir titulo e meta tags -->
-    <title>Dr(a). Nome | Especialidade Medica</title>
-    <meta name="description" content="Especialista em [especialidade]. Atendimento humanizado e baseado em evidencias. Agende sua consulta em Sao Paulo." />
-    <meta property="og:title" content="Dr(a). Nome | Especialidade Medica" />
-    <meta property="og:description" content="Especialista em [especialidade]. Agende sua consulta." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://draalinebenabou.com.br/opengraph.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Dr(a). Nome | Especialidade Medica" />
-    <meta name="twitter:description" content="Especialista em [especialidade]. Atendimento humanizado." />
+    <!-- Title, description, canonical, OG e JSON-LD são injetados por rota no build
+         (script/prerender.ts + client/src/content/seo.ts). O que está aqui vale só
+         para o `vite dev`, e por isso repete os valores da home. -->
+    <title>Cirurgiã Vascular e Endovascular em São Paulo | Dra. Aline Benabou</title>
+    <meta name="description" content="Dra. Aline de Paula C. Benabou (CRM 144.318/SP · RQE 54.123), cirurgiã vascular, endovascular e angiorradiologista formada pela FMUSP. Tratamento de varizes, aneurismas e trombose no Instituto Emunah, São Paulo." />
+    <link rel="canonical" href="https://www.draalinebenabou.com.br/" />
 
-    <!-- WHITELABEL: Substituir favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
