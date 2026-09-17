@@ -69,6 +69,11 @@ export default function Footer() {
             &copy; {currentYear} Dra. Aline de Paula C. Benabou. Todos os direitos reservados. Feito com
             <Heart size={16} className="fill-current" style={{ color: "#1E7B8C" }} />
           </p>
+          {/* Dados da pessoa jurídica: menor e mais apagado que o copyright,
+              porque é informação legal de rodapé e não mensagem ao paciente. */}
+          <p className="text-xs mt-3" style={{ color: "rgba(232, 245, 247, 0.45)" }}>
+            TRIVASC Serviços Médicos S/S · CNPJ 24.882.882/0001-24
+          </p>
         </div>
       </div>
     </footer>
